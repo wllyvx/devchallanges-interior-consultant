@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/21d4aa6984.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <title>Devchallenges</title>
+  </head>
+  <body class="bg-[#181719] text-white font-montserrat px-2 md:px-14 relative">
+    <header>
+      <nav class="nav-bar flex justify-between items-center py-5 md:py-8">
+        <div class="logo">
+          <div class="logo-container border-2 p-2">
+            <p class="logo-text font-crimson uppercase text-sm">this interior</p>
+          </div>
+        </div>
+        <div class="nav-list hidden md:flex space-x-16">
+            <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">Home</a>
+            <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">Collection</a>
+            <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">About</a>
+            <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">Contact</a>      
+        </div>
+
+        <!-- mobile button -->
+        <div class="hamburger md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <span class="material-icons-outlined">menu</span>
+          </button>
+        </div>
+        <!-- mobile button end -->
+         <!-- mobile menu  -->
+          <div class="mobile-menu hidden absolute bottom-0 h-full w-[100vw] bg-[#181719]">
+            <div class="w-full flex justify-end pr-4">
+              <button class="close-button">
+                <span class="material-icons-outlined">close</span>
+              </button>
+            </div>
+            <div class="mobile-nav-list flex flex-col justify-center items-center space-y-5 h-full">
+              <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">Home</a>
+              <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">Collection</a>
+              <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">About</a>
+              <a href="#" class="hover:font-bold hover:underline decoration-white underline-offset-4">Contact</a>  
+            </div>
+          </div>
+        <!-- mobile menu end -->
+    
+
+      </nav>
+         
+    </header>
+    <main>
+      <div class="container md:flex justify-center items-center md:h-[90vh]">
+        <div class="text md:flex flex-col justify-center md:mr-10">
+          <h1 class="font-lora font-medium text-3xl md:text-4xl mt-5">Modern Interior</h1>
+          <p class="desc text-xs md:text-lg mr-[25vw] md:w-full mt-4">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+          <a class="read-more flex items-center space-x-3" href="#">
+            <p class="text-sm font-bold">Read More</p>
+            <span class="material-icons-outlined py-5">arrow_right_alt</span>
+          </a>
+        </div>
+        <div class="hero flex flex-col items-end">
+          <div class="hero-img">
+            <img src="./images/photo1.png" alt="">
+          </div>
+          <div class="card flex flex-col space-y-3 bg-[#181719] mt-[-3rem] w-[85vw] md:w-[20vw] mr-2 md:mr-10 px-5 py-3">
+            <div class="profile flex space-x-3">
+              <img src="./images/photo2.png" alt="" class="w-10 h-10 rounded-full">
+              <div class="name flex flex-col justify-center">
+                <p class="text-[10px]">Aliza Webber</p>
+                <span class="text-[10px] text-[#828282]">Interior Designer</span>
+              </div>
+            </div>
+            <div class="attribution font-lora">
+              <p>Designed in 2020 by <br>Aliza Webber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-slate-500 text-xs text-center w-full fixed bottom-0">
+      <div class="mb-3">
+        <p>Coded by <a href="https://github.com/wllyvx" class="font-bold">Willy Fajar Ramadhan</a> -devChallenges.io</p>
+      </div>
+    </footer>
+    
+    <script>
+      const btn = document.querySelector(".mobile-menu-button")
+      const menu = document.querySelector(".mobile-menu")
+      const close = document.querySelector(".close-button")
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      })
+      close.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      }) 
+    </script>
+  </body>
+
+</html>
