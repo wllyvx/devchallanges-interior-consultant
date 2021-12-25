@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://wllyvx.github.io/devchallanges-interior-consultant/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/wllyvx/devchallanges-interior-consultant">
       Solution
     </a>
     <span> | </span>
@@ -36,13 +36,13 @@
 ## Overview
 
 Desktop preview: <br>
-![./screenshots/desktop.png]
+![](./screenshots/desktop.png)
 
 Mobile preview: <br>
-![./screenshots/mobile.png]
+![](./screenshots/mobile.png)
 
 Mobile nav menu preview: <br>
-![./screenshots/mobile-menu.png]
+![](./screenshots/mobile-menu.png)
 
 ### Built With
 
